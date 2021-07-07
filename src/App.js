@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, Fragment } from "react";
 import Username from "./Component/Username-Age/Username.component";
 import UserList from "./Component/UserList/userList.component";
 const App = () => {
@@ -13,10 +13,10 @@ const App = () => {
     });
   };
   return (
-    <div>
+    <Fragment>
       <Username onlistUpdate={adduserHandler} />
       <UserList users={userList} />
-    </div>
+    </Fragment>
   );
 };
 
